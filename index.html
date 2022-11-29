@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CSV to HTML Table</title>
-    <meta name="author" content="Derek Eder">
-    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table">
+    <title>CSV em tabela HTML</title>
+    <meta content="Exiba qualquer arquivo CSV como uma tabela HTML bonita, pesquisável e filtrável">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -19,14 +18,14 @@
     <div class="container-fluid">
         <main class="row">
             <div class="col">
-                <h1>CSV to HTML Table</h1>
+                <h1>CSV em tabela HTML</h1>
 
-                <p>Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100% JavaScript. <a
-                        href="https://github.com/derekeder/csv-to-html-table">Code
-                        on GitHub</a>.</p>
+                <p>Exiba qualquer arquivo CSV como uma tabela HTML bonita, pesquisável e filtrável. Feito em 100% JavaScript. <a
+                        href="https://github.com/derekeder/csv-to-html-table">Código no
+                        GitHub</a>.</p>
 
-                <p> Texto <a href="https://data.cityofchicago.org/browse?q=health%20clinic&sortBy=relevance&utf8=%E2%9C%93">City
-                        of Chicago Data Portal</a>.
+                <p>Visualize a fonte de dados <a href="http://sar.anac.gov.br">MPR
+                        ANAC SAR</a>.
                 </p>
 
                 <div id="table-container"></div>
@@ -35,7 +34,7 @@
         <footer class="row">
             <div class="col">
                 <hr>
-                <p class="text-right"><a href="https://github.com/derekeder/csv-to-html-table">CSV to HTML Table</a> by
+                <p class="text-right"><a href="https://github.com/derekeder/csv-to-html-table">CSV em tabela HTML</a> by
                     <a href="http://derekeder.com">Derek
                         Eder</a></p>
             </div>
@@ -56,7 +55,7 @@
         }
 
         CsvToHtmlTable.init({
-            csv_path: "data/regulamentos.csv",
+            csv_path: "data/MPR.csv",
             element: "table-container",
             allow_download: true,
             csv_options: {
